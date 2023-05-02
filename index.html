@@ -7,38 +7,55 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    
-    <!-- <nav class="relative container mx-auto bg-green-300 p-9">Hello</nav> -->
 
+<body>
+    <!--background-->
     <div class="relative container h-full max-w-full bg-blue-200">
     </div>
 
+    <!--Banner-->
     <div class="absolute mx-auto inset-9 max-h-20 w-full container border-4 text-center text-5xl font-semibold bg-yellow-600">
         Weather Dash
     </div>
 
-    <div class="absolute inset-44 left-16 w-1/5 h-2/3 container border-4 border-black">
-        Test
+    <!--Search Bar-->
+    <div class="absolute inset-44 left-16 w-1/5 h-2/3 container border-4 border-black" id="weather1">
+        <h2>Search for a City: </h2>
+        <form>
+            <input type="search" id="local">
+            <button class="rounded-none">Search</button>
+        </form>
     </div>
 
-    <div class="absolute top-44 end-20 w-3/5 h-1/4 container border-4 border-black bg-white">
+    <!--Current Day-->
+    <div class="absolute top-44 end-20 w-3/5 h-1/4 container border-4 border-black bg-white" id="weather0">
+        <h2>City Name and Current Date</h2>
+        <p>Temp Max</p>
+        <p>Temp Min</p>
+        <p>Wind</p>
+        <p>Humidity</p>
     </div>
 
+    <!--5 Day-->
     <div class="absolute grid grid-cols-5 gap-2 top-1/2 end-16 h-2/5 w-3/5">
-        <div class="w-44 h-full border-2 border-black bg-white">
+        <div class="w-44 h-full border-2 border-black bg-white" id="weather1">
+            <h3>Date</h3>
+            <p>Temp Max</p>
+            <p>Temp Min</p>
+            <p>Wind</p>
+            <p>Humidity</p>
         </div>
     
-        <div class="w-44 h-full border-2 border-black bg-white">
+        <div class="w-44 h-full border-2 border-black bg-white" id="weather2">
         </div>
     
-        <div class="w-44 h-full border-2 border-black bg-white">
+        <div class="w-44 h-full border-2 border-black bg-white" id="weather3">
         </div>
     
-        <div class="w-44 h-full border-2 border-black bg-white">
+        <div class="w-44 h-full border-2 border-black bg-white" id="weather4">
         </div>
     
-        <div class="w-44 h-full border-2 border-black bg-white">
+        <div class="w-44 h-full border-2 border-black bg-white" id="weather5">
         </div>
     </div>
 
